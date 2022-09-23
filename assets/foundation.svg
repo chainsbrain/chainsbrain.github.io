@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="298px" height="528px" viewBox="0 0 298 528" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="101.257813%" y2="49.7500002%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FD" offset="47.5247532%"></stop>
+            <stop stop-color="#B4EC51" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="157.871398%" y1="66.194415%" x2="43.7156079%" y2="57.9917826%" id="linearGradient-2">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FD" offset="47.5247532%"></stop>
+            <stop stop-color="#B4EC51" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="23.2878774%" x2="-92.9077238%" y2="173.077297%" id="linearGradient-3">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FD" offset="47.5247532%"></stop>
+            <stop stop-color="#B4EC51" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="114.777039%" y2="16.6183314%" id="linearGradient-4">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FD" offset="47.5247532%"></stop>
+            <stop stop-color="#B4EC51" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="81.4863726%" y2="66.5992521%" id="linearGradient-5">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FD" offset="47.5247532%"></stop>
+            <stop stop-color="#B4EC51" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="154.789263%" y2="-30.7538162%" id="linearGradient-6">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FD" offset="47.5247532%"></stop>
+            <stop stop-color="#B4EC51" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="111.124633%" y2="112.880132%" id="linearGradient-7">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FD" offset="47.5247532%"></stop>
+            <stop stop-color="#B4EC51" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-3" transform="translate(-3000.000000, -427.000000)">
+            <g id="Group-4" transform="translate(3000.000000, 427.000000)">
+                <polygon id="Triangle" fill="url(#linearGradient-1)" points="1 330.404147 207 527 145.0885 329"></polygon>
+                <polygon id="Triangle" fill="url(#linearGradient-2)" points="298 28 206.103807 528 145 329.850254"></polygon>
+                <polygon id="Triangle" fill="#D8D8D8" points="122 1 73.3653628 166 16 65.0213097"></polygon>
+                <polygon id="Triangle" fill="url(#linearGradient-3)" points="16.1306997 65 74 165.398245 0 331"></polygon>
+                <polygon id="Triangle" fill="url(#linearGradient-4)" points="297.947742 28.0066936 73.7217741 165.09404 120.829115 0.783179098"></polygon>
+                <polygon id="Triangle" fill="url(#linearGradient-5)" points="298 28 199.151118 276 73.7225427 165.061963"></polygon>
+                <polygon id="Triangle" fill="url(#linearGradient-6)" points="121 1 73.7452424 165.012259 16 65.1395411"></polygon>
+                <polygon id="Triangle" fill="url(#linearGradient-7)" points="73.7236187 165.00693 199 275.559468 0 331"></polygon>
+                <polygon id="Triangle" fill="url(#linearGradient-1)" points="199 275 164.804954 394 0 330.486524"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

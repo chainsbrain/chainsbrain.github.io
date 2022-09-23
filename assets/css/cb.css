@@ -1,0 +1,167 @@
+body{
+	background: #fafbfe;
+}
+
+.bg-color{
+	background: #fafbfe;
+
+}
+
+.stars {
+	background-color: #0e0b2b;
+	position: relative;
+	padding: 0px;
+	height:600px;
+}
+
+.stars .wow {
+	position: absolute;
+	bottom:20px;
+	left: 50%;
+	margin-left:-90px;
+}
+
+.stars #logo{
+	color:#fff;
+	text-align: center;
+	 font-weight: bold;
+	 width:240px;
+	 height:80px;
+	 position: relative;
+	 margin:0 auto;
+}
+
+#logo #c1{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left:0;
+	top:0;
+	background: #fff;
+	border-radius: 50px;
+	 background-image: linear-gradient(-45deg, #3023AE, #53A0FD, #B4EC51);
+
+}
+
+#logo #c2{
+	width: 74px;
+	height: 74px;
+	position: absolute;
+	animation-name: movea;
+	animation-duration: 5s;
+ 
+	left:7px;
+	top:3px;
+	background: #0e0b2b;
+	border-radius: 50px;
+
+	animation-timing-function: linear;
+
+}
+
+#logo #c3{
+	position: absolute;
+	top:50%;
+	left: 40px;
+	margin-top:-11px;
+	width:200px;
+	height: 22px;
+	vertical-align: bottom;
+	line-height: 1;
+	animation-name: movec;
+	animation-duration: 2s;
+	animation-delay: 5s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+#logo #c3 img{
+	line-height: 1;
+	opacity: 0.9;
+}
+
+.logo-text{
+	text-align: center;
+	color: #fff;
+	opacity: 0.9;
+	font-weight: bold;
+	font-size:58px;
+	padding-top:40px;
+	line-height: 1.5em;
+}
+
+.pro-avatar{
+	display: flex;
+	height:180px;
+	justify-content: center;
+	align-items: center;
+}
+
+.pro-avatar img{
+	display: flex;
+	 
+}
+
+.stars #star-canvas{
+	width:100%;
+	height:600px;
+	position: absolute;
+	top:0;
+	bottom:0;
+	width:100%;
+	z-index: 0;
+}
+
+#planet{
+	background: #fafbfe;
+	left:-50%;
+	right:-50%;
+	bottom:0;
+	position: absolute;
+	height:80px;
+	border-top-left-radius: 50% 100%;
+	border-top-right-radius: 50% 100%;
+
+}
+
+@keyframes movea{
+	from {
+		transform: translate(150px, 0);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes moveb{
+	from {
+		transform: translate(50px, 0);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes movec{
+	from {
+		opacity:  0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#footer-main{
+	text-align: center;
+	padding:40px 0;
+	background: #fff;
+}
+
+.sum{
+	text-align: center;
+}
+
+.number-lg{
+	font-size: 38px;
+	font-weight: bold;
+}

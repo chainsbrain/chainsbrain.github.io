@@ -1,79 +1,294 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Webpixels">
     <title>Chainsbrain</title>
-  </head>
-  <style>
-  	html,body{
-  		padding:0;
-  		margin:0;
-  		height:100%;
-  	}
-  	body{
-  		background-image: url(./v.jpeg);
-  		background-repeat: no-repeat;
-  		background-position: bottom right;
-  	}
-  	h1{
-  		color:#fff;
-  		
-  		font-weight: bold;
-  		padding:30px 80px;
-  		color: #444;
-  		margin:0;
-  		
-  	}
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
 
-    h2{
-      color:#fff;
-      font-size: 66px;
-      font-weight: bold;
-      padding:80px;
-      color: #444;
-      margin:0;
-    }
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
 
-    #space{
-      position: fixed;
-      bottom: 0;
-      right:0;
-    }
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    #star{
-      position: fixed;
-      width:1400px;
-      height: 1400px;
-      border-radius: 700px;
-      background-color: #f2f2f2;
-      right: -500px;
-      bottom:-1200px;
-    }
-  </style>
-  <body>
-    <div>
-      
-      <div id="header">
-        
-        <h1>
-          <img width="140px" src="./logo.png" alt="">
-        </h1>
-      </div>
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
 
-      <div>
-        <h2>We build cool things<br/> for fun</h2>
-      </div>
+        body:not(.loaded) {
+            overflow: hidden;
+        }
 
-      <div id="star"></div>
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
 
-      <div id="space">
-        <img width="400px" src="./spaceman.png" alt="">
-      </div>
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+    <link rel="stylesheet" href="assets/css/cb.css?v=1.2" id="stylesheet">
 
+</head>
 
-
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
     </div>
-  	
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false" aria-labelledby="modal-cookies" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+            <div class="modal-content bg-dark-dark">
+                <div class="modal-body">
+                    <!-- Text -->
+                    <p class="text-sm text-white mb-3">
+                        We use cookies so that our themes work for you. By using our website, you agree to our use of cookies.
+                    </p>
+                    <!-- Buttons -->
+                    <a href="pages/utility/terms.html" class="btn btn-sm btn-white" target="_blank">Learn more</a>
+                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Main content -->
+    <section class="stars">
+     	<canvas id="star-canvas" ></canvas>  
 
-  </body>
- </html>
+
+        <div class="container" style=" padding-top:100px;" >
+        	<div id="logo">
+        		<div id="c1"></div>
+        		<div id="c2"></div>
+        		<div id="c3"><img src="./assets/HAINSBRAIN.svg" width="200" height="22" alt=""></div>
+        		 
+        	</div>
+             
+        	<p class="logo-text" style="">用AI技术探索交易的边界</p>
+        </div>
+        <div id="planet">
+        	
+        </div>
+
+        <div class="wow"><img width="180px" src="./spaceman.png" style="vertical-align：middle;" alt=""></div>
+         
+    </section>
+    <section class="main bg-color" style="padding-bottom:40px">
+        <div class="container">
+            <!-- Title -->
+            <!-- Section title -->
+             <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                    
+                    <h2 class=" mt-4">我们做什么</h2>
+                    <div class="mt-2">
+                        <p class="lead lh-180">我们以做有趣而酷的事情为乐，专注于将AI运用于量化交易</p>
+                    </div>
+                </div>
+            </div>  
+            <!-- Card -->
+            <div class="row ">
+            	<div class="col-md-4">
+                    <div class="card2">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5 pro-avatar">
+                                <img src="assets/vtrade.svg" class="img-fluid img-center" style="width: 100px;" alt="vtrade" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Vtrade</h5>
+                            <p class="text-muted mb-0">基于事件驱动的开放式量化交易高仿真回测框架，可实现任意时间维度的数据回测。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card2">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5 pro-avatar">
+                                <img src="assets/godeyes.svg" class="img-fluid img-center" style="width: 160px;" alt="godeyes" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">上帝之眼 God eyes</h5>
+                            <p class="text-muted mb-0">为金融市场打造的机器学习引擎，在低信噪比的市场中具有更佳的泛化能力，因灵感缘于洞察自然演变之规律，顾名之为上帝之眼。</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-md-4">
+                    <div class="card2">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5 pro-avatar">
+                                <img src="assets/foundation.svg" class="img-fluid img-center" style="width: 60px;" alt="foundation" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">基石 Foundation</h5>
+                            <p class="text-muted mb-0">深度整合Vtrade和God eyes的交易管理中台，集合策略生产、回测、实盘机器人投放、复盘统计功能为一体。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="slice">
+        <div class="container">
+             <div class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-6">
+                    
+                    <h2 class=" mt-4">我们相信</h2>
+                    <div class="mt-2">
+                  
+                        <p class="lead lh-180">机器虽然还不具备创造力，但对历史数据的学习及归纳能力已经远超人类</p>
+
+                    </div>
+                </div>
+            </div>  
+            <!-- Features -->
+            <div class="row mx-lg-n4">
+                <!-- Features - Col 1 -->
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="sum shadow-none">
+                        <div class="p-3">
+                             
+                            <div>
+                                <span class="h4 number-lg">150年+</span>
+                                <p class="text-sm text-muted mb-0">
+                                    学习交易市场时长
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="sum shadow-none">
+                        <div class="p-3">
+                             
+                            <div>
+                                <span class="h4 number-lg">3000+次</span>
+                                <p class="text-sm text-muted mb-0">
+                                    提交代码次数
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="sum shadow-none">
+                        <div class="p-3">
+                             
+                            <div>
+                                <span class="h4 number-lg">200+</span>
+                                <p class="text-sm text-muted mb-0">
+                                    生产交易模型
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="sum shadow-none">
+                        <div class="p-3 ">
+                             
+                            <div>
+                                <span class="h4 number-lg">30W+</span>
+                                <p class="text-sm text-muted mb-0">
+                                    生产回测报告
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="sum shadow-none">
+                        <div class="p-3 ">
+                             
+                            <div>
+                                <span class="h4 number-lg">60W+</span>
+                                <p class="text-sm text-muted mb-0">
+                                    实盘下单次数
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="sum shadow-none">
+                        <div class="p-3">
+                             
+                            <div>
+                                <span class="h4 number-lg">60%+</span>
+                                <p class="text-sm text-muted mb-0">
+                                    历史年化收益
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                
+                 
+       
+            </div>
+        </div>
+    </section>
+ 
+ 
+    
+   
+  
+    <footer class="slice" id="footer-main">
+         &copy; 2022 <a href="https://www.chainsbrain.com" class="font-weight-bold" target="_blank">Chainsbrain</a>. All rights reserved
+    </footer>
+    <!-- Core JS  -->
+    
+
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  
+</body>
+
+</html>

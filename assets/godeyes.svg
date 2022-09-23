@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="595px" height="210px" viewBox="0 0 595 210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="165.007496%" y1="9.37574945%" x2="30.2035401%" y2="86.4323863%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FD" offset="47.5247532%"></stop>
+            <stop stop-color="#B4EC51" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="120.262503%" y1="62.7439499%" x2="24.9891446%" y2="28.847561%" id="linearGradient-2">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FD" offset="47.5247532%"></stop>
+            <stop stop-color="#B4EC51" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="66.1614895%" cy="31.9251004%" fx="66.1614895%" fy="31.9251004%" r="154.967945%" id="radialGradient-3">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#53A0FD" offset="47.5247532%"></stop>
+            <stop stop-color="#B4EC51" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-3" transform="translate(-822.000000, -557.000000)">
+            <g id="Group-6" transform="translate(822.000000, 557.000000)">
+                <path d="M0.857142857,93 L209,0 L209,43.3300565 C198.210318,57.4529796 191.008303,74.4631535 188.754532,93 L0.857142857,93 Z M0.857142857,117 L209,210 L209,167.669943 C198.016581,153.293432 190.750824,135.925053 188.637922,117 L0.857142857,117 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                <path d="M386,93 L594.142857,0 L594.142857,43.3300565 C583.353175,57.4529796 576.15116,74.4631535 573.89739,93 L386,93 Z M386,117 L594.142857,210 L594.142857,167.669943 C583.159438,153.293432 575.893681,135.925053 573.780779,117 L386,117 Z" id="Combined-Shape" fill="url(#linearGradient-2)" transform="translate(490.071429, 105.000000) rotate(180.000000) translate(-490.071429, -105.000000) "></path>
+                <circle id="Path" fill="url(#radialGradient-3)" cx="297.5" cy="105.5" r="88.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
